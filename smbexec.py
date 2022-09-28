@@ -64,7 +64,6 @@ def remote_init(username, password, target_ip):
     else:
         rpctransport.set_credentials(username=username, password=password)
         smbClient.login(user=username, password=password)
-
     smbClient.connectTree(share)
     return rpctransport, smbClient
 
